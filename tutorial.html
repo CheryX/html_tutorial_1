@@ -1,0 +1,32 @@
+<!DOCTYPE html> <!-- Ta linijka mówi przeglądarce, że chcemy pisać w najnowszej wersji HTML. -->
+<html lang="pl"><!-- lang="pl" odpowiada za język strony, przydatny dla przeglądarki abyś miał polskie artykuły a nie rosyjskie.-->
+    <head><!-- W sekcji "head" jest zapisany tytuł, opis, tagi itp.-->
+        <meta charset="utf-8" /><!-- Tutaj jest zapis znaków strony. Zazwyczaj wybieramy "UTF-8", ponieważ ma polskie znaki. -->
+		<title>Tytuł</title><!-- To jest dość proste, tytuł strony.-->
+        <meta name="description" content="Opis strony" /><!-- To jest opis strony, widać go np. w wyszukiwarce.-->
+        <style>/* Tutaj jest style, od tego momenu używamy CSS, a nie html. (dlatego używam innych znaczników m.in.) */
+            body {/* Teraz deklarujemy, że to co będzie do znaku "}", będzie dotyczyło całej strony. */
+                background-color: black;/* To jest jedna z modyfikacji strony, ta linijka zmienia kolor tła strony na czarny, pamiętaj o dwukropu i średniku ";"! */
+                color: #ffffff;/* Jest to kolejna modyfkacja, zmienia kolor tekstu. Zauważ, że mogłem użyć "White", ale użyłem formatu koloru w "hexie", UWAGA! Nie ma takie czegość jak "text-color"!*/
+            }/* Znak "}" zakańcza modyfikacje wyglądu strony. Po tym może być zmiana np. nagłówka. */
+            h1 {/* Teraz deklaruje to samo co w linijce 8 (body {), ale to będzie się tyczyć tylko głównego nagłówka, a nie całej strony. (h1)*/
+                color: red;/* Ta linijka informuję, że kolor nagłówka będzie czerwony.*/
+            }
+        </style><!-- Koniec deklaracji stylu.-->
+    </head><!-- Zamknięcie head, nic nadzwyczajnego.-->
+    <body><!-- W sekcji "body" jest zapisane co znajduje się na stronie.-->
+        <h1>Nagłówek strony</h1><!--Znacznik <h1> (header1) informuję, że do znacznika zamykającego </h1>, wszystko będzie nagłówkiem. -->
+        <p>To jest paragarf,<!--Tutaj jest taka sama sytuacja, ale zamiast <h1> jest <p> (paragraf)-->
+            paragraf jest faaajny...<br /><!-- Znacznik <br /> oznacza kolejną linijkę.-->
+            o, a to kolejna linijka. 
+            <b>Ten tekst jest pogrubiony...</b></p><!-- Znacznik <b> oznacza pogrubienie, do następnego </b> wszystko jest pogrubione.-->
+    </body>
+</html>
+<!--Legenda:
+<i> - kursywa
+<u> - podkreslenie
+<b> - pogrubienie
+<h1>-<h6> - naglowki 
+<p> - paragraf
+<br /> - kolejna linijka
+Niedługo będzie kolejna część...-->
